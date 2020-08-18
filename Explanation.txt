@@ -1,0 +1,49 @@
+In a string composed of 'L', 'R', and 'X' characters, like "RXXLRXRXL", a move consists of either replacing one occurrence of "XL" with "LX", 
+or replacing one occurrence of "RX" with "XR". Given the starting string start and the ending string end, 
+return True if and only if there exists a sequence of moves to transform one string to the other.
+
+Input Description:
+Start and End as strings in a single line.
+
+Output Descritpion:
+Print True or False
+
+Sample Input:
+RXXLRXRXL XRLXXRRLX
+
+Sample Output:
+True
+
+Explanation:
+We can transform start to end following these steps:
+RXXLRXRXL -> XRXLRXRXL -> XRLXRXRXL -> XRLXXRRXL -> XRLXXRRLX
+
+Sample Input:
+RXX XRL
+
+Sample Output:
+False
+
+Sample Input:
+RXLX LXRX
+
+Sample Output:
+False
+
+Sample Input:
+XLRX LXXR
+
+Sample Output:
+True
+
+Sample Input:
+RXXRRXLX XRRXXRXL
+
+Sample Output:
+False
+
+Sample Input:
+XLRXR LXXRR
+
+Sample Output:
+True
